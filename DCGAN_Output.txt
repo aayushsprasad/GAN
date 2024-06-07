@@ -1,0 +1,242 @@
+C:\Users\aayus\anaconda3\python.exe C:\Users\aayus\PycharmProjects\Discriminator_comparison\DCGAN.py 
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+Generator(
+  (main): Sequential(
+    (0): ConvTranspose2d(100, 512, kernel_size=(4, 4), stride=(1, 1), bias=False)
+    (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): ConvTranspose2d(512, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): ConvTranspose2d(256, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (7): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU(inplace=True)
+    (9): ConvTranspose2d(128, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (10): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (11): ReLU(inplace=True)
+    (12): ConvTranspose2d(64, 3, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (13): Tanh()
+  )
+)
+Discriminator(
+  (main): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (1): LeakyReLU(negative_slope=0.2, inplace=True)
+    (2): Conv2d(64, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (3): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (4): LeakyReLU(negative_slope=0.2, inplace=True)
+    (5): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (6): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    (8): Conv2d(256, 512, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (9): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): LeakyReLU(negative_slope=0.2, inplace=True)
+    (11): Conv2d(512, 1, kernel_size=(4, 4), stride=(1, 1), bias=False)
+    (12): Sigmoid()
+  )
+)
+Starting Training Loop...
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+[0/5][0/1583]	Loss_D: 1.7237	Loss_G: 5.2574	D(x): 0.5539	D(G(z)): 0.5840 / 0.0080
+[0/5][50/1583]	Loss_D: 0.2155	Loss_G: 22.1677	D(x): 0.9231	D(G(z)): 0.0000 / 0.0000
+[0/5][100/1583]	Loss_D: 1.5238	Loss_G: 14.1219	D(x): 0.9747	D(G(z)): 0.7151 / 0.0000
+[0/5][150/1583]	Loss_D: 0.6169	Loss_G: 7.3490	D(x): 0.9545	D(G(z)): 0.3800 / 0.0015
+[0/5][200/1583]	Loss_D: 0.4427	Loss_G: 3.7029	D(x): 0.8763	D(G(z)): 0.2162 / 0.0336
+[0/5][250/1583]	Loss_D: 0.7584	Loss_G: 4.7358	D(x): 0.7947	D(G(z)): 0.3171 / 0.0170
+[0/5][300/1583]	Loss_D: 0.8818	Loss_G: 4.1207	D(x): 0.5326	D(G(z)): 0.0131 / 0.0411
+[0/5][350/1583]	Loss_D: 0.5878	Loss_G: 5.1086	D(x): 0.8031	D(G(z)): 0.2040 / 0.0160
+[0/5][400/1583]	Loss_D: 0.4200	Loss_G: 4.5973	D(x): 0.8198	D(G(z)): 0.1086 / 0.0196
+[0/5][450/1583]	Loss_D: 0.4124	Loss_G: 4.9723	D(x): 0.9141	D(G(z)): 0.1958 / 0.0130
+[0/5][500/1583]	Loss_D: 0.4635	Loss_G: 7.1314	D(x): 0.9716	D(G(z)): 0.3082 / 0.0020
+[0/5][550/1583]	Loss_D: 0.9166	Loss_G: 8.2063	D(x): 0.8895	D(G(z)): 0.4383 / 0.0018
+[0/5][600/1583]	Loss_D: 0.2971	Loss_G: 5.5051	D(x): 0.8921	D(G(z)): 0.1299 / 0.0078
+[0/5][650/1583]	Loss_D: 0.3444	Loss_G: 4.6633	D(x): 0.8000	D(G(z)): 0.0581 / 0.0175
+[0/5][700/1583]	Loss_D: 0.5762	Loss_G: 3.2706	D(x): 0.6706	D(G(z)): 0.0131 / 0.0776
+[0/5][750/1583]	Loss_D: 0.5276	Loss_G: 6.8392	D(x): 0.9289	D(G(z)): 0.3048 / 0.0026
+[0/5][800/1583]	Loss_D: 1.1108	Loss_G: 8.1175	D(x): 0.9091	D(G(z)): 0.5378 / 0.0008
+[0/5][850/1583]	Loss_D: 0.5949	Loss_G: 3.5955	D(x): 0.6816	D(G(z)): 0.0871 / 0.0531
+[0/5][900/1583]	Loss_D: 1.0256	Loss_G: 7.5493	D(x): 0.9577	D(G(z)): 0.5374 / 0.0020
+[0/5][950/1583]	Loss_D: 0.5519	Loss_G: 4.0575	D(x): 0.8506	D(G(z)): 0.2299 / 0.0459
+[0/5][1000/1583]	Loss_D: 0.2886	Loss_G: 4.4112	D(x): 0.8587	D(G(z)): 0.0873 / 0.0290
+[0/5][1050/1583]	Loss_D: 0.7424	Loss_G: 4.4807	D(x): 0.7896	D(G(z)): 0.2801 / 0.0207
+[0/5][1100/1583]	Loss_D: 0.8523	Loss_G: 8.7853	D(x): 0.9484	D(G(z)): 0.4897 / 0.0005
+[0/5][1150/1583]	Loss_D: 0.5129	Loss_G: 3.9303	D(x): 0.7039	D(G(z)): 0.0280 / 0.0472
+[0/5][1200/1583]	Loss_D: 0.3741	Loss_G: 3.7751	D(x): 0.8073	D(G(z)): 0.0926 / 0.0379
+[0/5][1250/1583]	Loss_D: 0.4178	Loss_G: 3.4074	D(x): 0.8078	D(G(z)): 0.1377 / 0.0582
+[0/5][1300/1583]	Loss_D: 0.9560	Loss_G: 5.8165	D(x): 0.9233	D(G(z)): 0.5019 / 0.0071
+[0/5][1350/1583]	Loss_D: 0.6090	Loss_G: 4.7431	D(x): 0.8862	D(G(z)): 0.3297 / 0.0149
+[0/5][1400/1583]	Loss_D: 0.7058	Loss_G: 2.6342	D(x): 0.5808	D(G(z)): 0.0237 / 0.1324
+[0/5][1450/1583]	Loss_D: 0.4744	Loss_G: 2.8574	D(x): 0.7253	D(G(z)): 0.0370 / 0.0876
+[0/5][1500/1583]	Loss_D: 0.3539	Loss_G: 4.1602	D(x): 0.8963	D(G(z)): 0.1880 / 0.0256
+[0/5][1550/1583]	Loss_D: 0.5637	Loss_G: 4.4727	D(x): 0.8690	D(G(z)): 0.2925 / 0.0193
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+[1/5][0/1583]	Loss_D: 1.8237	Loss_G: 9.1468	D(x): 0.9774	D(G(z)): 0.7707 / 0.0009
+[1/5][50/1583]	Loss_D: 0.4779	Loss_G: 3.7586	D(x): 0.8233	D(G(z)): 0.1886 / 0.0383
+[1/5][100/1583]	Loss_D: 0.5715	Loss_G: 4.6398	D(x): 0.9192	D(G(z)): 0.3203 / 0.0217
+[1/5][150/1583]	Loss_D: 0.4351	Loss_G: 3.0285	D(x): 0.7633	D(G(z)): 0.0941 / 0.0649
+[1/5][200/1583]	Loss_D: 0.4781	Loss_G: 3.0917	D(x): 0.7646	D(G(z)): 0.1369 / 0.0673
+[1/5][250/1583]	Loss_D: 0.6560	Loss_G: 2.3517	D(x): 0.6308	D(G(z)): 0.0572 / 0.1403
+[1/5][300/1583]	Loss_D: 0.4516	Loss_G: 3.0545	D(x): 0.8158	D(G(z)): 0.1808 / 0.0663
+[1/5][350/1583]	Loss_D: 0.7530	Loss_G: 5.1735	D(x): 0.8360	D(G(z)): 0.3536 / 0.0112
+[1/5][400/1583]	Loss_D: 0.4213	Loss_G: 3.4199	D(x): 0.8385	D(G(z)): 0.1803 / 0.0464
+[1/5][450/1583]	Loss_D: 1.2421	Loss_G: 7.0541	D(x): 0.9637	D(G(z)): 0.6178 / 0.0021
+[1/5][500/1583]	Loss_D: 0.3321	Loss_G: 4.2168	D(x): 0.9274	D(G(z)): 0.2065 / 0.0216
+[1/5][550/1583]	Loss_D: 1.9384	Loss_G: 0.9553	D(x): 0.2185	D(G(z)): 0.0049 / 0.4547
+[1/5][600/1583]	Loss_D: 2.0637	Loss_G: 6.9180	D(x): 0.9766	D(G(z)): 0.7886 / 0.0044
+[1/5][650/1583]	Loss_D: 0.4816	Loss_G: 3.8806	D(x): 0.9178	D(G(z)): 0.2987 / 0.0288
+[1/5][700/1583]	Loss_D: 0.5001	Loss_G: 4.1630	D(x): 0.8969	D(G(z)): 0.2828 / 0.0258
+[1/5][750/1583]	Loss_D: 1.2629	Loss_G: 0.7156	D(x): 0.3786	D(G(z)): 0.0079 / 0.5408
+[1/5][800/1583]	Loss_D: 0.8103	Loss_G: 5.4609	D(x): 0.9357	D(G(z)): 0.4768 / 0.0067
+[1/5][850/1583]	Loss_D: 0.4085	Loss_G: 3.4027	D(x): 0.8379	D(G(z)): 0.1781 / 0.0496
+[1/5][900/1583]	Loss_D: 0.6234	Loss_G: 1.5985	D(x): 0.6080	D(G(z)): 0.0297 / 0.2538
+[1/5][950/1583]	Loss_D: 0.5090	Loss_G: 2.7436	D(x): 0.7859	D(G(z)): 0.1905 / 0.0913
+[1/5][1000/1583]	Loss_D: 0.4046	Loss_G: 2.2716	D(x): 0.8054	D(G(z)): 0.1417 / 0.1452
+[1/5][1050/1583]	Loss_D: 1.7156	Loss_G: 1.1226	D(x): 0.2656	D(G(z)): 0.0051 / 0.4165
+[1/5][1100/1583]	Loss_D: 0.5365	Loss_G: 3.7139	D(x): 0.9134	D(G(z)): 0.3320 / 0.0336
+[1/5][1150/1583]	Loss_D: 0.7410	Loss_G: 4.6609	D(x): 0.9251	D(G(z)): 0.4314 / 0.0160
+[1/5][1200/1583]	Loss_D: 0.3727	Loss_G: 3.3459	D(x): 0.8600	D(G(z)): 0.1712 / 0.0488
+[1/5][1250/1583]	Loss_D: 0.4504	Loss_G: 3.8604	D(x): 0.9046	D(G(z)): 0.2682 / 0.0295
+[1/5][1300/1583]	Loss_D: 1.7114	Loss_G: 5.3035	D(x): 0.9514	D(G(z)): 0.7322 / 0.0121
+[1/5][1350/1583]	Loss_D: 0.4463	Loss_G: 2.4954	D(x): 0.7328	D(G(z)): 0.0889 / 0.1126
+[1/5][1400/1583]	Loss_D: 0.5567	Loss_G: 3.7370	D(x): 0.9050	D(G(z)): 0.3258 / 0.0361
+[1/5][1450/1583]	Loss_D: 1.0347	Loss_G: 4.8140	D(x): 0.9467	D(G(z)): 0.5584 / 0.0148
+[1/5][1500/1583]	Loss_D: 0.5138	Loss_G: 2.4482	D(x): 0.8049	D(G(z)): 0.2202 / 0.1115
+[1/5][1550/1583]	Loss_D: 1.3478	Loss_G: 4.9291	D(x): 0.7395	D(G(z)): 0.5550 / 0.0113
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+[2/5][0/1583]	Loss_D: 0.4733	Loss_G: 2.6614	D(x): 0.8031	D(G(z)): 0.1935 / 0.0915
+[2/5][50/1583]	Loss_D: 2.2610	Loss_G: 1.1781	D(x): 0.1575	D(G(z)): 0.0087 / 0.3694
+[2/5][100/1583]	Loss_D: 0.9461	Loss_G: 4.6960	D(x): 0.9465	D(G(z)): 0.5532 / 0.0133
+[2/5][150/1583]	Loss_D: 0.7848	Loss_G: 4.4126	D(x): 0.9375	D(G(z)): 0.4584 / 0.0213
+[2/5][200/1583]	Loss_D: 0.8502	Loss_G: 1.9185	D(x): 0.6460	D(G(z)): 0.2511 / 0.1955
+[2/5][250/1583]	Loss_D: 1.0534	Loss_G: 4.3720	D(x): 0.9128	D(G(z)): 0.5531 / 0.0224
+[2/5][300/1583]	Loss_D: 1.0353	Loss_G: 1.0006	D(x): 0.4531	D(G(z)): 0.0980 / 0.4406
+[2/5][350/1583]	Loss_D: 0.5811	Loss_G: 3.5430	D(x): 0.8458	D(G(z)): 0.2898 / 0.0449
+[2/5][400/1583]	Loss_D: 0.4733	Loss_G: 3.3418	D(x): 0.8594	D(G(z)): 0.2465 / 0.0489
+[2/5][450/1583]	Loss_D: 0.7400	Loss_G: 2.0537	D(x): 0.6111	D(G(z)): 0.1466 / 0.1736
+[2/5][500/1583]	Loss_D: 0.4161	Loss_G: 2.4571	D(x): 0.8297	D(G(z)): 0.1865 / 0.1015
+[2/5][550/1583]	Loss_D: 0.5387	Loss_G: 3.5267	D(x): 0.8740	D(G(z)): 0.2976 / 0.0425
+[2/5][600/1583]	Loss_D: 1.1050	Loss_G: 5.2236	D(x): 0.9456	D(G(z)): 0.5865 / 0.0090
+[2/5][650/1583]	Loss_D: 0.7262	Loss_G: 3.9121	D(x): 0.9163	D(G(z)): 0.4253 / 0.0331
+[2/5][700/1583]	Loss_D: 0.6160	Loss_G: 2.1011	D(x): 0.7816	D(G(z)): 0.2791 / 0.1438
+[2/5][750/1583]	Loss_D: 1.4646	Loss_G: 5.0624	D(x): 0.9536	D(G(z)): 0.6937 / 0.0105
+[2/5][800/1583]	Loss_D: 0.5079	Loss_G: 2.0536	D(x): 0.7292	D(G(z)): 0.1352 / 0.1612
+[2/5][850/1583]	Loss_D: 0.5476	Loss_G: 3.3502	D(x): 0.8780	D(G(z)): 0.3079 / 0.0484
+[2/5][900/1583]	Loss_D: 0.6603	Loss_G: 2.6046	D(x): 0.7564	D(G(z)): 0.2606 / 0.1012
+[2/5][950/1583]	Loss_D: 0.7878	Loss_G: 2.7726	D(x): 0.7353	D(G(z)): 0.3242 / 0.0841
+[2/5][1000/1583]	Loss_D: 0.8276	Loss_G: 2.6441	D(x): 0.8319	D(G(z)): 0.4253 / 0.0909
+[2/5][1050/1583]	Loss_D: 0.5133	Loss_G: 3.4750	D(x): 0.8239	D(G(z)): 0.2491 / 0.0406
+[2/5][1100/1583]	Loss_D: 0.8582	Loss_G: 4.1705	D(x): 0.9440	D(G(z)): 0.5139 / 0.0239
+[2/5][1150/1583]	Loss_D: 1.3791	Loss_G: 3.9995	D(x): 0.8625	D(G(z)): 0.6419 / 0.0276
+[2/5][1200/1583]	Loss_D: 0.6541	Loss_G: 3.6474	D(x): 0.8931	D(G(z)): 0.3873 / 0.0354
+[2/5][1250/1583]	Loss_D: 0.5209	Loss_G: 4.4249	D(x): 0.9352	D(G(z)): 0.3366 / 0.0163
+[2/5][1300/1583]	Loss_D: 0.9449	Loss_G: 3.8775	D(x): 0.9433	D(G(z)): 0.5053 / 0.0331
+[2/5][1350/1583]	Loss_D: 0.7496	Loss_G: 3.5047	D(x): 0.8972	D(G(z)): 0.4273 / 0.0484
+[2/5][1400/1583]	Loss_D: 0.9095	Loss_G: 3.7337	D(x): 0.8043	D(G(z)): 0.4478 / 0.0326
+[2/5][1450/1583]	Loss_D: 0.5059	Loss_G: 2.9397	D(x): 0.7256	D(G(z)): 0.1138 / 0.0775
+[2/5][1500/1583]	Loss_D: 0.7109	Loss_G: 3.3358	D(x): 0.8685	D(G(z)): 0.3949 / 0.0498
+[2/5][1550/1583]	Loss_D: 1.1393	Loss_G: 1.4227	D(x): 0.3931	D(G(z)): 0.0427 / 0.3097
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+[3/5][0/1583]	Loss_D: 0.5393	Loss_G: 2.1400	D(x): 0.6775	D(G(z)): 0.0904 / 0.1541
+[3/5][50/1583]	Loss_D: 0.5356	Loss_G: 3.0590	D(x): 0.8449	D(G(z)): 0.2703 / 0.0605
+[3/5][100/1583]	Loss_D: 0.4882	Loss_G: 2.7842	D(x): 0.7815	D(G(z)): 0.1858 / 0.0826
+[3/5][150/1583]	Loss_D: 0.6475	Loss_G: 1.3211	D(x): 0.6057	D(G(z)): 0.0769 / 0.3093
+[3/5][200/1583]	Loss_D: 0.7807	Loss_G: 1.8358	D(x): 0.6399	D(G(z)): 0.2050 / 0.1992
+[3/5][250/1583]	Loss_D: 0.5891	Loss_G: 1.9403	D(x): 0.6837	D(G(z)): 0.1479 / 0.1707
+[3/5][300/1583]	Loss_D: 0.6425	Loss_G: 1.6535	D(x): 0.6533	D(G(z)): 0.1451 / 0.2230
+[3/5][350/1583]	Loss_D: 0.4392	Loss_G: 2.4524	D(x): 0.8138	D(G(z)): 0.1800 / 0.1206
+[3/5][400/1583]	Loss_D: 0.4676	Loss_G: 2.7602	D(x): 0.7311	D(G(z)): 0.1096 / 0.0860
+[3/5][450/1583]	Loss_D: 0.5552	Loss_G: 3.5323	D(x): 0.9166	D(G(z)): 0.3443 / 0.0393
+[3/5][500/1583]	Loss_D: 0.5032	Loss_G: 2.8132	D(x): 0.8540	D(G(z)): 0.2627 / 0.0782
+[3/5][550/1583]	Loss_D: 0.5910	Loss_G: 2.5356	D(x): 0.8100	D(G(z)): 0.2716 / 0.0982
+[3/5][600/1583]	Loss_D: 0.8629	Loss_G: 4.4359	D(x): 0.9263	D(G(z)): 0.4998 / 0.0172
+[3/5][650/1583]	Loss_D: 0.4757	Loss_G: 2.4874	D(x): 0.8238	D(G(z)): 0.2108 / 0.1053
+[3/5][700/1583]	Loss_D: 0.5008	Loss_G: 2.6875	D(x): 0.8796	D(G(z)): 0.2849 / 0.0889
+[3/5][750/1583]	Loss_D: 0.8287	Loss_G: 3.8603	D(x): 0.8889	D(G(z)): 0.4606 / 0.0299
+[3/5][800/1583]	Loss_D: 0.4552	Loss_G: 2.1982	D(x): 0.7847	D(G(z)): 0.1580 / 0.1329
+[3/5][850/1583]	Loss_D: 0.5243	Loss_G: 2.1564	D(x): 0.8039	D(G(z)): 0.2255 / 0.1446
+[3/5][900/1583]	Loss_D: 0.6225	Loss_G: 3.3084	D(x): 0.9157	D(G(z)): 0.3685 / 0.0471
+[3/5][950/1583]	Loss_D: 0.4846	Loss_G: 2.5410	D(x): 0.7610	D(G(z)): 0.1579 / 0.1020
+[3/5][1000/1583]	Loss_D: 0.6736	Loss_G: 3.2640	D(x): 0.8295	D(G(z)): 0.3367 / 0.0536
+[3/5][1050/1583]	Loss_D: 0.3731	Loss_G: 2.4066	D(x): 0.7998	D(G(z)): 0.1169 / 0.1129
+[3/5][1100/1583]	Loss_D: 0.5049	Loss_G: 2.5512	D(x): 0.7878	D(G(z)): 0.1961 / 0.0971
+[3/5][1150/1583]	Loss_D: 0.4702	Loss_G: 2.4545	D(x): 0.7536	D(G(z)): 0.1334 / 0.1190
+[3/5][1200/1583]	Loss_D: 0.6315	Loss_G: 1.1708	D(x): 0.6457	D(G(z)): 0.1338 / 0.3482
+[3/5][1250/1583]	Loss_D: 1.4764	Loss_G: 0.7888	D(x): 0.3087	D(G(z)): 0.0618 / 0.5027
+[3/5][1300/1583]	Loss_D: 0.7199	Loss_G: 1.3894	D(x): 0.6271	D(G(z)): 0.1748 / 0.2988
+[3/5][1350/1583]	Loss_D: 0.4760	Loss_G: 2.2213	D(x): 0.7873	D(G(z)): 0.1844 / 0.1381
+[3/5][1400/1583]	Loss_D: 0.5015	Loss_G: 2.6022	D(x): 0.8200	D(G(z)): 0.2314 / 0.0972
+[3/5][1450/1583]	Loss_D: 1.4842	Loss_G: 0.7390	D(x): 0.3373	D(G(z)): 0.0750 / 0.5423
+[3/5][1500/1583]	Loss_D: 0.5881	Loss_G: 3.6935	D(x): 0.9104	D(G(z)): 0.3595 / 0.0335
+[3/5][1550/1583]	Loss_D: 0.5695	Loss_G: 2.0573	D(x): 0.7642	D(G(z)): 0.2253 / 0.1511
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+[4/5][0/1583]	Loss_D: 0.8612	Loss_G: 3.5286	D(x): 0.9013	D(G(z)): 0.4818 / 0.0403
+[4/5][50/1583]	Loss_D: 1.3056	Loss_G: 5.3608	D(x): 0.9573	D(G(z)): 0.6566 / 0.0078
+[4/5][100/1583]	Loss_D: 0.6513	Loss_G: 2.0396	D(x): 0.6392	D(G(z)): 0.1213 / 0.1590
+[4/5][150/1583]	Loss_D: 2.9976	Loss_G: 0.1903	D(x): 0.0760	D(G(z)): 0.0046 / 0.8419
+[4/5][200/1583]	Loss_D: 0.5344	Loss_G: 1.7925	D(x): 0.7887	D(G(z)): 0.2240 / 0.2017
+[4/5][250/1583]	Loss_D: 0.6721	Loss_G: 4.4585	D(x): 0.9002	D(G(z)): 0.4022 / 0.0160
+[4/5][300/1583]	Loss_D: 0.7949	Loss_G: 1.9243	D(x): 0.5411	D(G(z)): 0.0632 / 0.1865
+[4/5][350/1583]	Loss_D: 0.4936	Loss_G: 2.2942	D(x): 0.7667	D(G(z)): 0.1734 / 0.1238
+[4/5][400/1583]	Loss_D: 0.6679	Loss_G: 1.6026	D(x): 0.6269	D(G(z)): 0.1167 / 0.2403
+[4/5][450/1583]	Loss_D: 0.5849	Loss_G: 1.6586	D(x): 0.6658	D(G(z)): 0.1081 / 0.2256
+[4/5][500/1583]	Loss_D: 0.4511	Loss_G: 2.0656	D(x): 0.8291	D(G(z)): 0.2043 / 0.1534
+[4/5][550/1583]	Loss_D: 0.6498	Loss_G: 3.2640	D(x): 0.8861	D(G(z)): 0.3700 / 0.0495
+[4/5][600/1583]	Loss_D: 0.5192	Loss_G: 2.5196	D(x): 0.8201	D(G(z)): 0.2417 / 0.1048
+[4/5][650/1583]	Loss_D: 0.5200	Loss_G: 2.9926	D(x): 0.8542	D(G(z)): 0.2798 / 0.0657
+[4/5][700/1583]	Loss_D: 0.9536	Loss_G: 1.2009	D(x): 0.4801	D(G(z)): 0.0912 / 0.3552
+[4/5][750/1583]	Loss_D: 0.6803	Loss_G: 1.6995	D(x): 0.6112	D(G(z)): 0.1037 / 0.2197
+[4/5][800/1583]	Loss_D: 1.0588	Loss_G: 1.4112	D(x): 0.4155	D(G(z)): 0.0341 / 0.3003
+[4/5][850/1583]	Loss_D: 0.5685	Loss_G: 3.1865	D(x): 0.8112	D(G(z)): 0.2626 / 0.0550
+[4/5][900/1583]	Loss_D: 2.3130	Loss_G: 1.1051	D(x): 0.1621	D(G(z)): 0.0425 / 0.4053
+[4/5][950/1583]	Loss_D: 0.6433	Loss_G: 3.0880	D(x): 0.8405	D(G(z)): 0.3357 / 0.0594
+[4/5][1000/1583]	Loss_D: 0.5550	Loss_G: 3.1272	D(x): 0.8829	D(G(z)): 0.3181 / 0.0570
+[4/5][1050/1583]	Loss_D: 0.6477	Loss_G: 2.0720	D(x): 0.7196	D(G(z)): 0.2247 / 0.1509
+[4/5][1100/1583]	Loss_D: 0.5162	Loss_G: 2.1795	D(x): 0.7945	D(G(z)): 0.2225 / 0.1346
+[4/5][1150/1583]	Loss_D: 0.7272	Loss_G: 1.5087	D(x): 0.5831	D(G(z)): 0.0918 / 0.2664
+[4/5][1200/1583]	Loss_D: 0.3121	Loss_G: 3.0030	D(x): 0.8813	D(G(z)): 0.1555 / 0.0677
+[4/5][1250/1583]	Loss_D: 0.6746	Loss_G: 4.0716	D(x): 0.9362	D(G(z)): 0.4167 / 0.0222
+[4/5][1300/1583]	Loss_D: 0.6203	Loss_G: 2.6832	D(x): 0.8503	D(G(z)): 0.3276 / 0.0866
+[4/5][1350/1583]	Loss_D: 0.9063	Loss_G: 5.4329	D(x): 0.9619	D(G(z)): 0.5416 / 0.0060
+[4/5][1400/1583]	Loss_D: 0.4007	Loss_G: 2.7299	D(x): 0.8210	D(G(z)): 0.1630 / 0.0817
+[4/5][1450/1583]	Loss_D: 0.7729	Loss_G: 2.7970	D(x): 0.8280	D(G(z)): 0.3891 / 0.0859
+[4/5][1500/1583]	Loss_D: 1.3387	Loss_G: 5.1520	D(x): 0.9490	D(G(z)): 0.6516 / 0.0098
+[4/5][1550/1583]	Loss_D: 0.5360	Loss_G: 2.6448	D(x): 0.8520	D(G(z)): 0.2797 / 0.0895
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
+C:\Users\aayus\anaconda3\Lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] The specified procedure could not be found'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Random Seed:  999
